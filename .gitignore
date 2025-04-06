@@ -177,3 +177,5 @@ cython_debug/
 .qodo
 
 *.csv
+
+/notebooks/eda
