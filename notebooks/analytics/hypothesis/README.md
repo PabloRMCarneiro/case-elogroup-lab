@@ -1,4 +1,4 @@
-# Análise de Prévia de Negócio
+# Análise Prévia de Negócio
 
 Esta análise foi conduzida para orientar a estratégia de expansão da rede de laboratórios, considerando fatores que, do ponto de vista do negócio, são essenciais para atrair e fidelizar clientes. A seguir, são apresentadas as premissas e hipóteses escolhidas, acompanhadas das justificativas fundamentadas em lógica de mercado.
 
