@@ -1,32 +1,26 @@
-# Análise de Prévia de Negócio
+## **Recapitulação e Justificativa para Escolha dos Três ZCTAs para Expansão de Laboratórios**
 
-Esta análise foi conduzida para orientar a estratégia de expansão da rede de laboratórios, considerando fatores que, do ponto de vista do negócio, são essenciais para atrair e fidelizar clientes. A seguir, são apresentadas as premissas e hipóteses escolhidas, acompanhadas das justificativas fundamentadas em lógica de mercado.
+Após análise e validação das hipóteses estabelecidas inicialmente para a expansão estratégica dos laboratórios, chega-se ao seguinte conjunto de critérios fundamentais para selecionar três ZCTAs ideais:
 
-## 1. População
-- **Premissa:** A quantidade de pessoas em um ZCTA determina o potencial de mercado para serviços diagnósticos.
-- **Hipótese:** ZCTAs com maior população tendem a gerar um volume maior de exames e, consequentemente, maior receita.
-- **Justificativa:** Em áreas com alta concentração populacional, a probabilidade de haver um número significativo de pacientes em busca de exames aumenta naturalmente. Isso representa uma base de clientes maior, essencial para a sustentabilidade e o crescimento do negócio.
+### Critérios e Justificativas
 
-## 2. Idade
-- **Premissa:** A distribuição etária influencia a necessidade de serviços de saúde.
-- **Hipótese:** ZCTAs com maior concentração de idosos demandam mais exames diagnósticos.
-- **Justificativa:** Pessoas em faixas etárias mais avançadas geralmente necessitam de um monitoramento mais frequente de sua saúde. Assim, áreas com maior proporção de idosos representam mercados com demanda contínua e previsível por serviços de diagnóstico.
+1. **Alta População:**
+   - Confirmada, através de análises estatísticas (correlação positiva significativa: 0,734 para exames e 0,677 para receita, ambos com p-value muito baixo), que regiões mais populosas apresentam volumes maiores de exames diagnósticos e maior receita potencial.
 
-## 3. Renda
-- **Premissa:** O poder aquisitivo dos moradores afeta a capacidade de investir em serviços de saúde.
-- **Hipótese:** ZCTAs com maior renda tendem a gerar maior receita e podem demandar exames de maior valor agregado.
-- **Justificativa:** Em regiões economicamente mais favoráveis, os consumidores possuem maior disposição para investir em saúde e em exames que ofereçam tecnologia avançada ou maior precisão diagnóstica. Isso não só aumenta a receita por exame, mas também permite a oferta de serviços premium.
+2. **Distribuição de Renda (Quartis Q1, Q2 e Q4):**
+   - Apesar da ausência de correlação direta entre renda média e receita geral dos exames, foi identificado um desempenho claramente inferior em ZCTAs com renda média-alta (quartil Q3). Portanto, foca-se em áreas de baixa (Q1), média baixa (Q2) e alta renda (Q4), evitando a faixa Q3, onde o desempenho financeiro é comprovadamente mais fraco.
 
-## 4. Gênero
-- **Premissa:** A composição de gênero influencia os padrões de consumo de serviços de saúde.
-- **Hipótese:** ZCTAs com uma maior proporção de mulheres podem registrar um volume maior de exames.
-- **Justificativa:** É amplamente reconhecido que, por questões culturais e comportamentais, as mulheres tendem a utilizar serviços de saúde de forma mais frequente. Assim, áreas com predominância feminina podem oferecer um fluxo mais constante de clientes e oportunidades para programas de prevenção e fidelização.
+3. **Predominância Feminina:**
+   - Embora a correlação linear direta entre a proporção de mulheres e volume geral de exames não tenha sido confirmada estatisticamente (correlação fraca, p-value elevado), observou-se um efeito limiar importante. ZCTAs com proporção feminina entre 50%-53% apresentaram um aumento perceptível na demanda por exames diagnósticos.
 
-## 5. Densidade
-- **Premissa:** A presença de múltiplos laboratórios em um mesmo ZCTA pode limitar o potencial de expansão.
-- **Hipótese:** ZCTAs com muitos laboratórios podem indicar saturação do mercado, mesmo que a demanda seja alta.
-- **Justificativa:** Em regiões onde já existe uma alta concentração de laboratórios, a competição pode reduzir a fatia de mercado de cada estabelecimento, dificultando a entrada de novos players. Portanto, identificar áreas com menor densidade pode oferecer oportunidades para expansão e maior penetração de mercado.
+4. **Indicador de Expansão (expansion_indicator):**
+   - Foi desenvolvido um indicador específico que combina gênero e faixa etária: a razão entre o número de adultos jovens e de meia-idade (25-54 anos, faixa com maior demanda) subtraindo a faixa de 0-5 anos (alta complexidade e custo), dividida pela proporção masculina/feminina. Assim, esse indicador reflete o potencial máximo de retorno, favorecendo regiões com mais mulheres e maior concentração etária de alto volume de exames, enquanto penaliza aquelas com elevado número de crianças pequenas, que representam maior custo por exame.
 
----
+### Conclusão Final:
 
-Essas hipóteses e premissas foram selecionadas com base em um entendimento do mercado de saúde e na lógica de negócios, visando identificar regiões com maior potencial para ampliar a rede de laboratórios e fidelizar clientes.
+Com base nesse procedimento, as áreas selecionadas serão aquelas que simultaneamente:
+- Apresentam alta densidade populacional (top 3%).
+- Não se encontram na faixa de renda média-alta (Q3).
+- Obtiveram maior valor do indicador de expansão (expansion_indicator).
+
+Dessa forma, acredita-se garantir a maximização do potencial econômico e estratégico da expansão dos laboratórios, considerando as variáveis mais influentes e já validadas pela análise.

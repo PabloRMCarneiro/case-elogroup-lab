@@ -16,8 +16,8 @@ def to_snake_case(df: pd.DataFrame) -> None:
     """
     df.columns = (
         df.columns.str.replace(r"(?<!^)(?=[A-Z])", "_", regex=True)
-        .str.replace(" ", "_")
         .str.replace(r"[^\w]", "", regex=True)
+        .str.replace(" ", "_")
         .str.lower()
     )
 
@@ -50,12 +50,14 @@ def remove_outlier(df: pd.DataFrame, column: str) -> None:
     Returns:
         None
     """
-    Q1 = df[column].quantile(0.25)
-    Q3 = df[column].quantile(0.75)
+    df_ = df.copy()
+
+    Q1 = df_[column].quantile(0.25)
+    Q3 = df_[column].quantile(0.75)
     
     IQR = Q3 - Q1
     
     lower_bound = Q1 - 1.5 * IQR
     upper_bound = Q3 + 1.5 * IQR
     
-    df.drop(df[(df[column] < lower_bound) | (df[column] > upper_bound)].index, inplace=True)
+    return df_.drop(df_[(df_[column] < lower_bound) | (df_[column] > upper_bound)].index)
