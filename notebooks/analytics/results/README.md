@@ -1,4 +1,4 @@
-## **Recapitulação e Justificativa para Escolha dos Três ZCTAs para Expansão de Laboratórios**
+## **Critérios para Escolha dos Três ZCTAs para Expansão de Laboratórios**
 
 Após análise e validação das hipóteses estabelecidas inicialmente para a expansão estratégica dos laboratórios, chega-se ao seguinte conjunto de critérios fundamentais para selecionar três ZCTAs ideais:
 

@@ -63,6 +63,11 @@ Com o ambiente virtual ativado, instale as dependências listadas no arquivo `re
 pip install -r requirements.txt
 ```
 
+### 3. Importação de Data sets
+
+Todos os data sets devem ser importados para a pasta `data/raw` antes de executar os notebooks ou a pipeline.
+
+
 ## Execução dos Notebooks
 
 A pasta `notebooks/` contém todos os Jupyter Notebooks necessários para:
@@ -89,9 +94,6 @@ A pasta `pipe/` contém os módulos para automatizar o tratamento dos dados e a 
 
 ### Passos para execução:
 
-0. **Pré-requisito:**  
-   Para a execução esperada todos os data sets originais devem estar na pasta `data/raw`
-
 1. **Pré-processamento:**  
    Para rodar o pré-processamento de todos os datasets e gerar os arquivos limpos, execute:
 
@@ -108,7 +110,7 @@ A pasta `pipe/` contém os módulos para automatizar o tratamento dos dados e a 
    python -m pipe.main --select
    ```
 
-   Este comando utiliza os dados processados para calcular o indicador de expansão (baseado em critérios demográficos, econômicos e de volume de exames) e imprime os três ZCTAs recomendados.
+   Este comando utiliza os dados processados para calcular o indicador de expansão e os filtros necessário, por fim imprime os três ZCTAs recomendados.
 
 3. **Executar ambas as etapas:**  
    Se desejar executar as duas etapas de uma só vez, combine os argumentos:
