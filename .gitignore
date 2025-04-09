@@ -174,3 +174,8 @@ cython_debug/
 .pypirc
 
 /venv
+.qodo
+
+*.csv
+
+/notebooks/eda
