@@ -12,6 +12,7 @@ Após análise e validação das hipóteses estabelecidas inicialmente para a ex
 
 3. **Indicador de Expansão (expansion_indicator):**
    - Foi desenvolvido um indicador específico que combina gênero e faixa etária: a razão entre o número de adultos jovens e de meia-idade (25-54 anos, faixa com maior demanda) dividida pela proporção masculina/feminina. Assim, esse indicador reflete o potencial máximo de retorno, favorecendo regiões com mais gênero feminino e maior concentração etária de alto volume de exames.
+   - Ele combina as duas hipóteses, faixa etária e gênero, considerando que não só a faixa etária de 25-54 anos mas também zipcodes que contém a proporção de pessoas do gênero feminino maior do que o masculino apresentam maiores recorrência de exame
 
 ### Conclusão Final:
 

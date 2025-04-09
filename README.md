@@ -68,7 +68,7 @@ pip install -r requirements.txt
 Todos os data sets devem ser importados para a pasta `data/raw` antes de executar os notebooks ou a pipeline.
 
 
-## Execução dos Notebooks
+## Execução e Leitura dos Notebooks
 
 A pasta `notebooks/` contém todos os Jupyter Notebooks necessários para:
 - Pré-processamento dos dados (limpeza, transformação e validação);
@@ -81,10 +81,13 @@ Para abrir e executar os notebooks, utilize:
 jupyter notebook
 ```
 
-Navegue até a pasta desejada (por exemplo, `notebooks/pre_processing` ou `notebooks/analytics/hypothesis`) e execute cada notebook conforme a ordem lógica descrita:
-1. Executar os notebooks de pré-processamento.
-2. Analisar os notebooks de hipóteses em `analytics/hypothesis/`.
-3. Verificar a consolidação dos resultados em `analytics/results/consolidated.ipynb`.
+Navegue até a pasta desejada e execute cada notebook conforme a ordem lógica descrita:
+1. [Executar os notebooks de pré-processamento em `notebooks/pre_processing`](notebooks/pre_processing)
+2. [Ler a Análise Prévia de Negócio em `hypothesis/README.md`](notebooks/analytics/hypothesis/README.md)
+3. [Analisar os notebooks de hipóteses em `analytics/hypothesis/`](notebooks/analytics/hypothesis/)
+4. [Ler a Sumarização dos Resultados em `results/README.md`](notebooks/analytics/results/README.md)
+5. [Verificar a consolidação dos resultados em `/results/consolidated.ipynb`](notebooks/results/consolidated.ipynb)
+
 
 Cada pasta contém um README.md adicional com instruções específicas e descrição dos conteúdos.
 
