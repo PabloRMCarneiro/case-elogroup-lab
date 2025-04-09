@@ -86,7 +86,7 @@ Navegue até a pasta desejada e execute cada notebook conforme a ordem lógica d
 2. [Ler a Análise Prévia de Negócio em `hypothesis/README.md`](notebooks/analytics/hypothesis/README.md)
 3. [Analisar os notebooks de hipóteses em `analytics/hypothesis/`](notebooks/analytics/hypothesis/)
 4. [Ler a Sumarização dos Resultados em `results/README.md`](notebooks/analytics/results/README.md)
-5. [Verificar a consolidação dos resultados em `/results/consolidated.ipynb`](notebooks/results/consolidated.ipynb)
+5. [Verificar a consolidação dos resultados em `/results/consolidated.ipynb`](notebooks/analytics/results/consolidated.ipynb)
 
 
 Cada pasta contém um README.md adicional com instruções específicas e descrição dos conteúdos.
